@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>兔兔图床设置</title>
+    <link rel="stylesheet" href="styles/popup.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>兔兔图床设置</h1>
+        <div class="form-group">
+            <label for="apiKeyInput">API 密钥</label>
+            <input type="text" id="apiKeyInput" name="apiKey" placeholder="请输入您的 API 密钥">
+            <a href="https://tutu.to/settings" target="_blank" class="link">获取 API 密钥</a>
+        </div>
+        <div class="form-group checkbox-container">
+            <input type="checkbox" id="openNewTabCheckbox">
+            <label for="openNewTabCheckbox">上传成功后在新标签页中打开图片链接</label>
+        </div>
+        <div class="form-group checkbox-container">
+            <input type="checkbox" id="anonymousUploadCheckbox">
+            <label for="anonymousUploadCheckbox">匿名上传</label>
+        </div>
+        <div class="button-group">
+            <button id="saveButton" class="btn btn-primary">保存</button>
+            <button id="clearButton" class="btn btn-secondary">清除密钥</button>
+        </div>
+    </div>
+    <script src="scripts/popup.js"></script>
+</body>
+
+</html>
